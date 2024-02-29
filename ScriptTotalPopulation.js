@@ -1,6 +1,6 @@
 //Print the total population of countries using reduce function - scriptTotalPopulation.js
 var request=new XMLHttpRequest();
-request.open('GET','https://restcountries.eu/rest/v2/all','true');
+request.open('GET','https://restcountries.com/v3.1/all','true');
 request.send();
 request.onload=function (){
     var countryData=JSON.parse(this.response);
